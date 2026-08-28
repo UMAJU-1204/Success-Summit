@@ -1,0 +1,843 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Success Summit 2026 — El Árbol de la Transformación Digital</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Manrope:wght@400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+  <div class="progress-bar" id="progressBar"></div>
+  <div class="cursor-dot" id="cursorDot"></div>
+  <div class="cursor-ring" id="cursorRing"></div>
+
+  <button class="back-top" id="backTop" aria-label="Volver arriba">↑</button>
+
+  <!-- NAV -->
+  <div class="nav-trigger"
+    style="position:fixed;top:0;left:0;width:100%;height:40px;z-index:999;pointer-events:auto;background:transparent;">
+  </div>
+  <nav class="nav">
+    <div class="nav-logo">
+      <img src="imagesproyectos/logoBLANCO.png" width="24" height="24" style="height:24px; width:auto;">
+    </div>
+    <div class="nav-links">
+      <a href="#equipo"><span class="nav-ic">🌱</span>Tierra Fértil</a>
+      <a href="#metodo"><span class="nav-ic">🌰</span>Raíz</a>
+      <a href="#tronco"><span class="nav-ic">🪵</span>Tronco</a>
+      <a href="#ramas"><span class="nav-ic">🌿</span>Ramas</a>
+      <a href="#resultados"><span class="nav-ic">🍎</span>Frutos</a>
+      <a href="#cierre"><span class="nav-ic">🏁</span>Cierre</a>
+    </div>
+    <a href="#hero" class="nav-cta magnetic">Transformación Digital</a>
+  </nav>
+
+  <!-- 1. HERO (sin cambios) -->
+  <section id="hero">
+    <div class="hero-bg">
+      <img src="images/Gemini_Generated_Image_eyz9kmeyz9kmeyz9.jpg">
+    </div>
+    <div class="blob blob-pink"></div>
+    <div class="blob blob-blue"></div>
+    <div class="float-deco" aria-hidden="true">
+      <span class="float-item" style="left:6%;top:18%;font-size:2rem;animation-duration:10s;">🍃</span>
+      <span class="float-item"
+        style="left:88%;top:14%;font-size:1.5rem;animation-duration:12s;animation-delay:1.5s;">🌱</span>
+      <span class="float-item"
+        style="left:78%;top:62%;font-size:1.8rem;animation-duration:9s;animation-delay:.6s;">🍂</span>
+      <span class="float-item"
+        style="left:14%;top:70%;font-size:1.4rem;animation-duration:11s;animation-delay:2.2s;">🌿</span>
+      <span class="float-item"
+        style="left:48%;top:8%;font-size:1.2rem;animation-duration:13s;animation-delay:3s;">✨</span>
+    </div>
+    <div class="eyebrow reveal"><span class="dot"></span> SUCCESS SUMMIT · 2026</div>
+    <h1 class="hero-title reveal">
+      <span class="line line-green">TRANSFORMACIÓN</span>
+      <span class="line line-pink">DIGITAL</span>
+    </h1>
+    <p class="hero-sub reveal">Conectamos personas, procesos y tecnología para convertir necesidades en soluciones que
+      generan impacto.</p>
+    <div class="hero-actions reveal">
+      <a href="#equipo" class="btn btn-solid magnetic">Descubre cómo ↓</a>
+      <a href="#resultados" class="btn btn-outline magnetic">Ver resultados</a>
+    </div>
+  </section>
+
+  <!-- SECCIÓN 1: VIDEO 1 — "Nuestra historia" -->
+  <section class="video-section bg-bark" id="videoUno">
+    <div class="video-wrap">
+      <video id="video1" class="autoplay-video" muted playsinline preload="metadata" style="display: block;">
+        <source src="ramas/video1.mp4" type="video/mp4">
+      </video>
+      <div class="video-overlay"></div>
+      <div class="float-deco" aria-hidden="true">
+        <span class="float-item" style="left:10%;top:20%;font-size:1.3rem;animation-duration:10s;">🍃</span>
+        <span class="float-item"
+          style="left:85%;top:30%;font-size:1.1rem;animation-duration:9s;animation-delay:1s;">✨</span>
+        <span class="float-item"
+          style="left:70%;top:75%;font-size:1.4rem;animation-duration:11s;animation-delay:2s;">🍂</span>
+      </div>
+      <div class="video-big-play" aria-hidden="true">▶</div>
+      <div class="video-click-hint">▶ Toca para reproducir con audio</div>
+      <div class="video-caption reveal">
+        <h3>Así crece la transformación</h3>
+      </div>
+    </div>
+  </section>
+
+  <!-- MARQUEE BAND (antes iba antes del video, ahora procede después) -->
+  <div class="marquee-band band-green">
+    <div class="marquee-track" id="track1">
+      <span>TRANSFORMACIÓN DIGITAL ✦ RESULTADOS ✦ PROCESOS ✦ DESARROLLOS ✦ AUTOMATIZACIÓN ✦ ESTANDARIZACIÓN ✦ INNOVACIÓN
+        ✦ </span>
+      <span>TRANSFORMACIÓN DIGITAL ✦ RESULTADOS ✦ PROCESOS ✦ desarrollos ✦ AUTOMATIZACIÓN ✦ ESTANDARIZACIÓN ✦ INNOVACIÓN
+        ✦ </span>
+    </div>
+  </div>
+
+  <!-- SECCIÓN 2: TIERRA FÉRTIL — EQUIPO (título + carrusel de fotos + frase, todo en una vista) -->
+  <section id="equipo" class="bg-soil equipo-single-view">
+    <div class="float-deco" aria-hidden="true">
+      <span class="float-item" style="left:5%;top:14%;font-size:1.6rem;animation-duration:9s;">🌱</span>
+      <span class="float-item"
+        style="left:92%;top:20%;font-size:1.3rem;animation-duration:11s;animation-delay:1s;">🌿</span>
+      <span class="float-item"
+        style="left:12%;top:82%;font-size:1.4rem;animation-duration:10s;animation-delay:2s;">🍂</span>
+      <span class="float-item"
+        style="left:80%;top:78%;font-size:1.2rem;animation-duration:12s;animation-delay:.5s;">🌱</span>
+      <span class="float-item"
+        style="left:50%;top:90%;font-size:1.1rem;animation-duration:8s;animation-delay:1.6s;">✨</span>
+    </div>
+
+    <h2 class="reveal equipo-title">EQUIPO DE ALTO DESEMPEÑO</h2>
+
+    <!-- CARRUSEL DE FOTOS — tira continua de óvalos con contorno verde, todas se mueven juntas -->
+    <div class="equipo-marquee-wrap reveal">
+      <div class="equipo-marquee">
+        <div class="equipo-marquee-track" id="equipoTrack">
+          <div class="equipo-oval-item">
+            <div class="equipo-oval"><img src="images/irmag.png" alt="Foto de Irma Guadalupe Sánchez García"></div>
+            <span class="eq-name">Irma Guadalupe Sánchez García</span>
+            <span class="eq-role">Gerente de Transformación Digital</span>
+          </div>
+          <div class="equipo-oval-item">
+            <div class="equipo-oval"><img src="images/jaqui.png" alt="Foto de Jaqueline Gonzalez Cervantes"></div>
+            <span class="eq-name">Jaqueline Gonzalez Cervantes</span>
+            <span class="eq-role">Orquestadora de Transformación Digital</span>
+          </div>
+          <div class="equipo-oval-item">
+            <div class="equipo-oval"><img src="images/martitha.png" alt="Foto de Ana Martha Pérez Barrios"></div>
+            <span class="eq-name">Ana Martha Pérez Barrios</span>
+            <span class="eq-role">Líder de Aplicaciones ERP</span>
+          </div>
+          <div class="equipo-oval-item">
+            <div class="equipo-oval"><img src="images/moi.png" alt="Foto de Luis Moisés Garcia Rivera"></div>
+            <span class="eq-name">Luis Moisés Garcia Rivera</span>
+            <span class="eq-role">Ingeniero en Innovación Digital</span>
+          </div>
+          <div class="equipo-oval-item">
+            <div class="equipo-oval"><img src="images/tono.png" alt="Foto de Antonio Juárez Mendieta"></div>
+            <span class="eq-name">Antonio Juárez Mendieta</span>
+            <span class="eq-role">Jefe de Transformación</span>
+          </div>
+          <div class="equipo-oval-item">
+            <div class="equipo-oval"><img src="images/axel.png" alt="Foto de Axel Yael Fragoso Gonzalez"></div>
+            <span class="eq-name">Axel Yael Fragoso Gonzalez</span>
+            <span class="eq-role">Soporte ERP</span>
+          </div>
+          <div class="equipo-oval-item">
+            <div class="equipo-oval"><img src="images/ulises.png" alt="Foto de Ulises Miguel Álvarez Julián"></div>
+            <span class="eq-name">Ulises Miguel Álvarez Julián</span>
+            <span class="eq-role">Ingeniero en Soluciones Digitales</span>
+          </div>
+          <div class="equipo-oval-item">
+            <div class="equipo-oval"><img src="images/emanuel.png" alt="Foto de Emanuel Vazquez Padilla"></div>
+            <span class="eq-name">Emanuel Vazquez Padilla</span>
+            <span class="eq-role">Becario</span>
+          </div>
+          <div class="equipo-oval-item">
+            <div class="equipo-oval"><img src="images/yes.png" alt="Foto de Yesica Guadalupe Gutierrez Zarate"></div>
+            <span class="eq-name">Yesica Guadalupe Gutierrez Zarate</span>
+            <span class="eq-role">Becaria</span>
+          </div>
+          <div class="equipo-oval-item">
+            <div class="equipo-oval"><img src="images/gabo.png" alt="Foto de Gabriel Hernández Zavala"></div>
+            <span class="eq-name">Gabriel Hernández Zavala</span>
+            <span class="eq-role">Becario</span>
+          </div>
+          <!-- duplicado para loop continuo sin cortes -->
+          <div class="equipo-oval-item" aria-hidden="true">
+            <div class="equipo-oval"><img src="images/irmag.png" alt=""></div>
+            <span class="eq-name">Irma Guadalupe Sánchez García</span>
+            <span class="eq-role">Gerente de Transformación Digital</span>
+          </div>
+          <div class="equipo-oval-item" aria-hidden="true">
+            <div class="equipo-oval"><img src="images/jaqui.png" alt=""></div>
+            <span class="eq-name">Jaqueline Gonzalez Cervantes</span>
+            <span class="eq-role">Orquestadora de Transformación Digital</span>
+          </div>
+          <div class="equipo-oval-item" aria-hidden="true">
+            <div class="equipo-oval"><img src="images/martitha.png" alt=""></div>
+            <span class="eq-name">Ana Martha Pérez Barrios</span>
+            <span class="eq-role">Líder de Aplicaciones ERP</span>
+          </div>
+          <div class="equipo-oval-item" aria-hidden="true">
+            <div class="equipo-oval"><img src="images/moi.png" alt=""></div>
+            <span class="eq-name">Luis Moisés Garcia Rivera</span>
+            <span class="eq-role">Ingeniero en Innovación Digital</span>
+          </div>
+          <div class="equipo-oval-item" aria-hidden="true">
+            <div class="equipo-oval"><img src="images/tono.png" alt=""></div>
+            <span class="eq-name">Antonio Juárez Mendieta</span>
+            <span class="eq-role">Jefe de Transformación</span>
+          </div>
+          <div class="equipo-oval-item" aria-hidden="true">
+            <div class="equipo-oval"><img src="images/axel.png" alt=""></div>
+            <span class="eq-name">Axel Yael Fragoso Gonzalez</span>
+            <span class="eq-role">Soporte ERP</span>
+          </div>
+          <div class="equipo-oval-item" aria-hidden="true">
+            <div class="equipo-oval"><img src="images/ulises.png" alt=""></div>
+            <span class="eq-name">Ulises Miguel Álvarez Julián</span>
+            <span class="eq-role">Ingeniero en Soluciones Digitales</span>
+          </div>
+          <div class="equipo-oval-item" aria-hidden="true">
+            <div class="equipo-oval"><img src="images/emanuel.png" alt=""></div>
+            <span class="eq-name">Emanuel Vazquez Padilla</span>
+            <span class="eq-role">Becario</span>
+          </div>
+          <div class="equipo-oval-item" aria-hidden="true">
+            <div class="equipo-oval"><img src="images/yes.png" alt=""></div>
+            <span class="eq-name">Yesica Guadalupe Gutierrez Zarate</span>
+            <span class="eq-role">Becaria</span>
+          </div>
+          <div class="equipo-oval-item" aria-hidden="true">
+            <div class="equipo-oval"><img src="images/gabo.png" alt=""></div>
+            <span class="eq-name">Gabriel Hernández Zavala</span>
+            <span class="eq-role">Becario</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- FRASE — debajo del carrusel -->
+    <div class="equipo-phrase reveal">
+      <p>
+        Construimos la tierra fértil donde hoy sembramos la transformación: un equipo con roles 
+        claros, capacidades fortalecidas, procesos de trabajo estandarizados y una cultura de
+         colaboración orientada a resultados.
+         Hoy somos un equipo más preparado, conectado y enfocado en transformar retos en resultados.
+      </p>
+    </div>
+  </section>
+
+  <!-- RAÍZ — SOLO TÍTULO + VIDEO 2 -->
+  <section id="metodo" class="bg-roots">
+    <canvas class="digital-canvas"></canvas>
+    <div class="float-deco" aria-hidden="true">
+      <span class="float-item" style="left:8%;top:16%;font-size:1.3rem;animation-duration:11s;">🌰</span>
+      <span class="float-item"
+        style="left:90%;top:22%;font-size:1.1rem;animation-duration:9s;animation-delay:1s;">✨</span>
+      <span class="float-item"
+        style="left:14%;top:80%;font-size:1.2rem;animation-duration:10s;animation-delay:2s;">🌱</span>
+    </div>
+    <h2 class="reveal">NUESTRO SISTEMA OPERATIVO<br></h2>
+
+    <div class="video-wrap root-video-wrap reveal">
+      <video id="video2" class="autoplay-video" muted playsinline preload="metadata" style="display: block;">
+        <source src="ramas/video2.mp4" type="video/mp4">
+      </video>
+      <div class="video-overlay"></div>
+      <div class="video-big-play" aria-hidden="true">▶</div>
+      <div class="video-click-hint">▶ Toca para reproducir con audio</div>
+      <div class="video-caption">
+      </div>
+    </div>
+  </section>
+
+  <!-- SECCIÓN 3: TRONCO — MODELO GENERAL-->
+  <section id="tronco" class="bg-roots" style="margin-bottom: 4rem; background: #0b0d10;">
+    <canvas class="digital-canvas"></canvas>
+    <div class="float-deco" aria-hidden="true">
+      <span class="float-item" style="left:8%;top:16%;font-size:1.3rem;animation-duration:11s;">🪵</span>
+      <span class="float-item"
+        style="left:90%;top:22%;font-size:1.1rem;animation-duration:9s;animation-delay:1s;">✨</span>
+      <span class="float-item"
+        style="left:14%;top:80%;font-size:1.2rem;animation-duration:10s;animation-delay:2s;">🌿</span>
+    </div>
+
+    <div class="eyebrow reveal">
+      <span class="dot"></span> MODELO GENERAL DE LA ORGANIA¿ZACIÓN
+    </div>
+
+    <div class="modelo-layout">
+      <div class="modelo-text">
+        <h2 class="reveal">
+          CONOCE LO QUE SOSTIENE<br>
+          Y ORDENA CADA RAMA
+        </h2>
+      </div>
+
+      <div class="trunk-image-wrap reveal" style="
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: #0b0d10;
+      padding: 0;
+      margin: 0;
+      box-shadow: 0 0 30px 5px rgba(0, 229, 255, 0.6),
+                  0 0 60px 15px rgba(0, 229, 255, 0.3);
+      border-radius: 0;
+    ">
+        <img src="imagesproyectos/modelo.png" alt="Modelo general de Transformación Digital" style="
+          width: 100%;
+          height: auto;
+          display: block;
+          border: none;
+          outline: none;
+          border-radius: 0;
+          object-fit: contain;
+          background: #0b0d10;
+        ">
+      </div>
+    </div>
+  </section>
+
+  <!-- QUOTE 3 — banner deslizante + frase, en la misma pantalla -->
+  <section class="quote-screen" id="quote3">
+    <canvas class="digital-canvas"></canvas>
+    <div class="marquee-band band-blue marquee-inline">
+      <div class="marquee-track" id="track3">
+        <span>OPTIMIZAR ✦ ESTANDARIZAR ✦ DIGITALIZAR ✦ AUTOMATIZAR ✦ OPTIMIZAR ✦ ESTANDARIZAR ✦ DIGITALIZAR ✦ AUTOMATIZAR
+          ✦ </span>
+        <span>OPTIMIZAR ✦ ESTANDARIZAR ✦ DIGITALIZAR ✦ AUTOMATIZAR ✦ OPTIMIZAR ✦ ESTANDARIZAR ✦ DIGITALIZAR ✦ AUTOMATIZAR
+          ✦ </span>
+      </div>
+    </div>
+    <p class="quote-text reveal">Conocimiento, Experiencia y Colaboración son <span class="hl hl-green">la Base de
+        cada Transformación.</span></p>
+  </section>
+
+
+  <!-- SECCIÓN 4: RAMAS — PORTADA -->
+  <section id="ramas" class="bg-branches ramas-intro">
+    <div class="float-deco" aria-hidden="true">
+      <span class="float-item" style="left:6%;top:12%;font-size:1.5rem;animation-duration:10s;">🍃</span>
+      <span class="float-item"
+        style="left:92%;top:18%;font-size:1.3rem;animation-duration:12s;animation-delay:1s;">🍃</span>
+      <span class="float-item"
+        style="left:15%;top:85%;font-size:1.4rem;animation-duration:9s;animation-delay:2s;">🌿</span>
+      <span class="float-item"
+        style="left:82%;top:80%;font-size:1.2rem;animation-duration:11s;animation-delay:.6s;">🍃</span>
+    </div>
+    <h2 class="reveal">CADA RAMA CRECE.<br> Y CADA PROYECTO NOS HACE MÁS GRANDES.</h2>
+    <p class="section-sub reveal">Las ramas sostienen varios proyectos. Desplázate para conocerlos. </p>
+    <div class="ramas-legend reveal">
+      <span class="legend-chip legend-1"><i></i>Rama 1 · GIT conectando en la Nube</span>
+      <span class="legend-chip legend-2"><i></i>Rama 2 · Procesos Inteligentes: conectamos, automatizamos y
+        evolucionamos con IA</span>
+      <span class="legend-chip legend-3"><i></i>Rama 3 · Soporte en adopciones de nuevas tecnologías</span>
+    </div>
+    <div class="scroll-hint reveal"><span class="scroll-hint-dot"></span> Desliza para explorar cada rama ↓</div>
+  </section>
+
+  <!-- PILAR 1: GIT CONECTANDO EN LA NUBE -->
+<section id="rama-1" class="bg-branches pillar-section" data-pillar="1">
+  <div class="eyebrow reveal">
+    <span class="dot"></span> 🌿 1 DE 3</div>
+
+  <div class="pillar" data-pillar="1">
+    <!-- CABECERA -->
+    <div class="pillar-header">
+      <div class="pillar-title-badge">
+        <h3>GIT Conectando en la Nube</h3>
+      </div>
+    </div>
+
+    <!-- PROYECTOS: se revelan al hacer scroll -->
+    <div class="branch-track">
+      <div class="sub-grid">
+        <!-- Tarjeta 01 -->
+        <div class="sub-card branch-card side-right">
+          <div class="sub-image sub-carousel">
+            <div class="sub-slide is-active"><img src="imagesproyectos/inforlogo.png" alt="Licenciamiento Infor"></div>
+            <div class="sub-slide"><img src="ramas/CPQ.jpg" alt="Licenciamiento Infor · consulta en tablet"></div>
+          </div>
+          <div class="sub-body">
+            <div class="sub-index-row"><span class="sub-index">01</span><span class="sub-index-line"></span></div>
+            <h4>Optimización estratégica del licenciamiento <span class="hl">Infor</span></h4>
+            <div class="sub-feature">
+              <span class="sub-feature-icon"><svg viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg></span>
+              <p>Realizamos un análisis integral de usuarios, empresas y aplicaciones para redefinir el esquema de
+                licenciamiento de Infor SyteLine conforme a las necesidades actuales y al crecimiento gradual de la
+                plataforma.</p>
+            </div>
+            <div class="sub-feature">
+              <span class="sub-feature-icon"><svg viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/><polyline points="17 6 23 6 23 12"/></svg></span>
+              <p>Esta estrategia permitió ampliar la cobertura, optimizar la inversión y fortalecer la negociación con
+                el proveedor, haciendo posible incorporar soluciones como CPQ, Factory Track y Service Mobile, sin
+                incrementar el costo originalmente previsto para el proyecto.</p>
+            </div>
+            <div class="sub-foot"><span class="status-chip done">CONCLUIDO</span><span class="sub-date">2026</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tarjeta 02 -->
+        <div class="sub-card branch-card side-left">
+          <div class="sub-image sub-carousel">
+            <div class="sub-slide is-active"><img src="ramas/modelo2.png" alt="Firma de modelo"></div>
+            <div class="sub-slide"><img src="ramas/modelo4.png" alt="Presentación del modelo a líderes"></div>
+            <div class="sub-slide"><img src="ramas/modelo2.png" alt="Presentación del modelo a líderes"></div>
+          </div>
+          <div class="sub-body">
+            <div class="sub-index-row"><span class="sub-index">02</span><span class="sub-index-line"></span></div>
+            <h4>Liderazgo y compromiso en la adopción del <span class="hl">ERP</span></h4>
+            <div class="sub-feature">
+              <span class="sub-feature-icon"><svg viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg></span>
+              <p>Los líderes de proceso encabezaron la definición y presentación del Modelo de Implementación 1B de
+                Transtell y de la Reimplementación de APS de SYCSA, exponiendo su alcance, enfoque, actividades y
+                lineamientos de ejecución ante las instancias correspondientes.</p>
+            </div>
+            <div class="sub-foot"><span class="status-chip done">CONCLUIDO</span><span class="sub-date">2026</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tarjeta 03 -->
+        <div class="sub-card branch-card side-right">
+          <div class="sub-image sub-carousel">
+            <div class="sub-slide is-active"><img src="imagesproyectos/FactoryTrack2.jpg" alt="Factory Track · control en piso"></div>
+            <div class="sub-slide"><img src="imagesproyectos/factoryTrack1.jpg" alt="Factory Track · registro en tiempo real"></div>
+          </div>
+          <div class="sub-body">
+            <div class="sub-index-row"><span class="sub-index">03</span><span class="sub-index-line"></span></div>
+            <h4>Factory Track: control de la operación en <span class="hl">tiempo real</span></h4>
+            <div class="sub-feature">
+              <span class="sub-feature-icon"><svg viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg></span>
+              <p>Seleccionamos Factory Track como la solución óptima para controlar y registrar en tiempo real la
+                mano de obra y los materiales, fortaleciendo la trazabilidad, la visibilidad y la eficiencia de la
+                operación en planta.</p>
+            </div>
+            <div class="sub-foot"><span class="status-chip done">CONCLUIDO</span><span class="sub-date">2026</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tarjeta 04 -->
+        <div class="sub-card branch-card side-left">
+          <div class="sub-image sub-carousel">
+            <div class="sub-slide is-active"><img src="ramas/SytelieERP.jpeg" alt="Descuentos en ERP"></div>
+          </div>
+          <div class="sub-body">
+            <div class="sub-index-row"><span class="sub-index">04</span><span class="sub-index-line"></span></div>
+            <h4>Descuentos en <span class="hl">ERP</span></h4>
+            <div class="sub-feature">
+              <span class="sub-feature-icon"><svg viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="19" y1="5" x2="5" y2="19"/><circle cx="6.5" cy="6.5" r="2.5"/><circle cx="17.5" cy="17.5" r="2.5"/></svg></span>
+              <p>Implementamos en SyteLine una solución para estandarizar la aplicación de descuentos, fortaleciendo
+                el control, la consistencia y la eficiencia del proceso comercial.</p>
+            </div>
+            <div class="sub-foot"><span class="status-chip done">CONCLUIDO</span><span class="sub-date">2026</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tarjeta 05 -->
+        <div class="sub-card branch-card side-right">
+          <div class="sub-image sub-carousel">
+            <div class="sub-slide is-active"><img src="ramas/sytelinelogo.png" alt="Implementación mediante EDT"></div>
+            <div class="sub-slide is-active"><img src="ramas/martita.jpg" alt="Implementación mediante EDT"></div>
+          </div>
+          <div class="sub-body">
+            <div class="sub-index-row"><span class="sub-index">05</span><span class="sub-index-line"></span></div>
+            <h4>Implementación de proyectos mediante <span class="hl">EDT</span></h4>
+            <div class="sub-feature">
+              <span class="sub-feature-icon"><svg viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="6" y1="3" x2="6" y2="15"/><circle cx="18" cy="6" r="3"/><circle cx="6" cy="18" r="3"/><path d="M18 9a9 9 0 0 1-9 9"/></svg></span>
+              <p>Implementamos una solución en SyteLine que utiliza la EDT para agrupar y gestionar múltiples PJ de
+                forma estratégica, conservando el control y seguimiento independiente de cada uno.</p>
+            </div>
+            <div class="sub-foot"><span class="status-chip progress">En curso</span><span class="sub-date">2026</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tarjeta 06 -->
+        <div class="sub-card branch-card side-left">
+          <div class="sub-image sub-carousel">
+            <div class="sub-slide is-active"><img src="ramas/etapas1.png" alt="1B, 2, Transtell · APS SYCSA y migración"></div>
+            <div class="sub-slide"><img src="ramas/etapas2.png" alt="Transtell · evaluación de alternativas"></div>
+          </div>
+          <div class="sub-body">
+            <div class="sub-index-row"><span class="sub-index">06</span><span class="sub-index-line"></span></div>
+            <h4>1B, 2, Transtell · APS SYCSA y <span class="hl">migración</span></h4>
+            <div class="sub-feature">
+              <span class="sub-feature-icon"><svg viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="23 4 23 10 17 10"/><polyline points="1 20 1 14 7 14"/><path d="M3.51 9a9 9 0 0 1 14.85-3.36L23 10M1 14l4.64 4.36A9 9 0 0 0 20.49 15"/></svg></span>
+              <p>Estamos evaluando alternativas, priorizando el alcance crítico y alineando los recursos necesarios
+                para acelerar la implementación del ERP y alcanzar los resultados esperados en el horizonte más
+                cercano posible.</p>
+            </div>
+            <div class="sub-foot"><span class="status-chip next">En evaluación</span><span class="sub-date">2026</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tarjeta 07 -->
+        <div class="sub-card branch-card side-right">
+          <div class="sub-image sub-carousel">
+            <div class="sub-slide is-active"><img src="ramas/cpq1.jpg" alt="CPQ · Configure, Price, Quote"></div>
+            <div class="sub-slide"><img src="ramas/cpq2.jpg" alt="CPQ · configuración de productos"></div>
+          </div>
+          <div class="sub-body">
+            <div class="sub-index-row"><span class="sub-index">07</span><span class="sub-index-line"></span></div>
+            <h4><span class="hl">CPQ</span> · Configure, Price, Quote</h4>
+            <div class="sub-feature">
+              <span class="sub-feature-icon"><svg viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg></span>
+              <p>Desde 2010 hemos desarrollado capacidades para la configuración de productos. Hoy, mediante la
+                implementación de CPQ, estamos próximos a automatizar este proceso en Transtell, fortaleciendo la
+                estandarización, la precisión y la agilidad en la generación de ofertas.</p>
+            </div>
+            <div class="sub-foot"><span class="status-chip next">Próximo</span><span class="sub-date">2026</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+  <!-- PILAR 2: DIGITALIZACIÓN Y AUTOMATIZACIÓN ERP -->
+  <section id="rama-2" class="bg-branches pillar-section" data-pillar="2">
+    <div class="eyebrow reveal"><span class="dot"></span> 🌿 2 DE 3</div>
+    <div class="pillar" data-pillar="2">
+      <div class="pillar-header">
+        <div class="pillar-title-badge">
+          <h3>Procesos Inteligentes: conectamos, automatizamos y evolucionamos con IA</h3>
+        </div>
+      </div> <!-- Cierra pillar-header -->
+
+      <div class="branch-track">
+        <div class="sub-grid">
+          <div class="sub-card branch-card side-right">
+            <div class="sub-image sub-carousel">
+              <div class="sub-slide is-active"><img src="ramas/logosadet.jpg" alt="Conexión SADET con ERP"></div>
+              <div class="sub-slide"><img src="ramas/sadet1.jpg" alt="SADET · sincronización de sistemas"></div>
+              <div class="sub-slide"><img src="ramas/sadet2.jpg" alt="SADET · trazabilidad de la operación"></div>
+            </div>
+            <div class="sub-body">
+              <div class="sub-index-row"><span class="sub-index">01</span><span class="sub-index-line"></span></div>
+              <h4>Conexión SADET con <span class="hl">ERP</span> · "Un solo lenguaje, una sola fuente de verdad"</h4>
+              <div class="sub-feature">
+                <span class="sub-feature-icon"><svg viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg></span>
+                <p>Automatizamos la actualización de Recursos y Grupos de Recursos, conectando los diferentes
+                  sistemas con el ERP y homologando conceptos, estructuras y términos para que la información fluya
+                  de manera consistente entre ellos.</p>
+              </div>
+              <div class="sub-feature">
+                <span class="sub-feature-icon"><svg viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><polyline points="9 12 11 14 15 10"/></svg></span>
+                <p>Con esta integración, consolidamos al ERP como la fuente única y confiable de información,
+                  fortaleciendo la comunicación, la sincronización y la trazabilidad en toda la operación.</p>
+              </div>
+              <div class="sub-foot"><span class="status-chip progress">En curso</span><span
+                  class="sub-date">2026</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="sub-card branch-card side-left">
+            <div class="sub-image sub-carousel">
+              <div class="sub-slide is-active"><img src="ramas/buzon1.png" alt="Digitalización estratégica rumbo a 2030"></div>
+              <div class="sub-slide"><img src="imagesproyectos/buzonDeDenunciaAnonima.png" alt="Buzón de Denuncia Anónima Digital"></div>
+              <div class="sub-slide"><img src="ramas/digitalizacion3.png" alt="Digitalización estratégica · experiencia de usuario"></div>
+            </div>
+            <div class="sub-body">
+              <div class="sub-index-row"><span class="sub-index">02</span><span class="sub-index-line"></span></div>
+              <h4>Digitalización estratégica rumbo a <span class="hl">2030</span></h4>
+              <div class="sub-feature">
+                <span class="sub-feature-icon"><svg viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76"/></svg></span>
+                <p>Diseñamos sistemas intuitivos, accesibles y fáciles de utilizar, que simplifiquen la experiencia
+                  del usuario, faciliten su adopción y fortalezcan el control, la trazabilidad y la eficiencia.
+                  Digitalizamos las necesidades de hoy para habilitar los resultados de GIT hacia 2030.</p>
+              </div>
+              <div class="sub-examples-wrap">
+                <span class="sub-examples-label">🧩 Este proyecto integra 6 iniciativas</span>
+                <div class="sub-examples-grid">
+                  <span class="sub-example-chip">📊 Digitalización de Análisis Financiero de Inversión (AFI)</span>
+                  <span class="sub-example-chip">📢 Sistema de Buzón de Denuncia Anónima Digital</span>
+                  <span class="sub-example-chip">🎓 Autocapacitación, Evaluación y Certificación de Competencias</span>
+                  <span class="sub-example-chip">⚙️ Funcionalidades en Aplicativos de Power Apps</span>
+                  <span class="sub-example-chip">🔔 Conecta GIT · Notificación automática de actualizaciones</span>
+                  <span class="sub-example-chip">🧾 Digitalización de Reporte de Servicio</span>
+                </div>
+              </div>
+              <div class="sub-foot"><span class="status-chip progress">En curso</span><span
+                  class="sub-date">2026</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PILAR 3: ESTANDARIZACIÓN Y OPTIMIZACIÓN DE INGENIERÍA -->
+  <section id="rama-3" class="bg-branches pillar-section" data-pillar="3">
+    <div class="eyebrow reveal"><span class="dot"></span> 🌿 3 DE 3</div>
+    <div class="pillar" data-pillar="3">
+      <div class="pillar-header">
+        <div class="pillar-title-badge">
+          <h3>Soporte en adopciones de nuevas tecnologías</h3>
+        </div>
+      </div> <!-- Cierra pillar-header -->
+
+      <div class="branch-track">
+        <div class="sub-grid">
+          <div class="sub-card branch-card side-right">
+            <div class="sub-image sub-carousel">
+              <div class="sub-slide is-active"><img src="imagesproyectos/etapasTono.png" alt="Estandarización de Ingeniería"></div>
+              <div class="sub-slide"><img src="images/sistemaGITAtlas1.png" alt="Conexión con GIT ATLAS"></div>
+              <div class="sub-slide"><img src="images/20260825_125453.jpg" alt="Estandarización de Ingeniería · arquitectura del proyecto"></div>
+            </div>
+            <div class="sub-body">
+              <div class="sub-index-row"><span class="sub-index">01</span><span class="sub-index-line"></span></div>
+              <h4>Estandarización de Ingeniería: una transformación <span class="hl">conectada</span></h4>
+              <div class="sub-feature">
+                <span class="sub-feature-icon"><svg viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 1 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 1 1-2.83-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 1 1 2.83-2.83l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 1 1 2.83 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg></span>
+                <p>Participamos como facilitadores del proyecto de Estandarización de Ingeniería, estructurándolo
+                  bajo un modelo integral de transformación, con una arquitectura definida y un plan de
+                  implementación orientado a acelerar la adopción de estándares.</p>
+              </div>
+              <div class="sub-feature">
+                <span class="sub-feature-icon"><svg viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg></span>
+                <p>Además, aseguramos la conexión entre 3DEXPERIENCE, Eplan Preplanning, GIT ATLAS y el ERP, para
+                  integrar el flujo de información y consolidar al ERP como la fuente única y confiable de datos
+                  para la organización.</p>
+              </div>
+              <div class="sub-foot"><span class="status-chip progress">En curso</span><span
+                  class="sub-date">2026</span>
+              </div>
+            </div>
+          </div>
+          <div class="sub-card branch-card side-left">
+            <div class="sub-image sub-carousel">
+              <div class="sub-slide is-active"><img src="imagesproyectos/sistemaGITAtlas2.png" alt="BooBoost de CRM con IA"></div>
+              <div class="sub-slide"><img src="images/whatsapp-1.jpeg" alt="BooBoost CRM · procesos habilitados con IA"></div>
+              <div class="sub-slide"><img src="images/presentacion.jpg" alt="BooBoost CRM · colaboración con el área Comercial"></div>
+            </div>
+            <div class="sub-body">
+              <div class="sub-index-row"><span class="sub-index">02</span><span class="sub-index-line"></span></div>
+              <h4>Boost de CRM: nuestros primeros procesos habilitados con <span class="hl">IA</span></h4>
+              <div class="sub-feature">
+                <span class="sub-feature-icon"><svg viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="4" width="16" height="16" rx="2"/><rect x="9" y="9" width="6" height="6"/><line x1="9" y1="1" x2="9" y2="4"/><line x1="15" y1="1" x2="15" y2="4"/><line x1="9" y1="20" x2="9" y2="23"/><line x1="15" y1="20" x2="15" y2="23"/><line x1="20" y1="9" x2="23" y2="9"/><line x1="20" y1="14" x2="23" y2="14"/><line x1="1" y1="9" x2="4" y2="9"/><line x1="1" y1="14" x2="4" y2="14"/></svg></span>
+                <p>Participamos en Agentforce, donde fortalecimos nuestro conocimiento sobre la aplicación de
+                  inteligencia artificial en los procesos de negocio. A partir de esta experiencia, estamos
+                  colaborando con el área Comercial para potenciar el CRM e impulsar nuestros primeros procesos
+                  habilitados con IA.</p>
+              </div>
+              <div class="sub-foot"><span class="status-chip progress">En curso</span><span
+                  class="sub-date">2026</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- MARQUEE BAND 2 -->
+  <div class="marquee-band band-pink">
+    <div class="marquee-track" id="track2">
+      <span>EQUIPO ✦ PROCESO ✦ TECNOLOGÍA ✦ RESULTADOS ✦ EQUIPO ✦ PROCESO ✦ TECNOLOGÍA ✦ RESULTADOS ✦</span>
+      <span>EQUIPO ✦ PROCESO ✦ TECNOLOGÍA ✦ RESULTADOS ✦ EQUIPO ✦ PROCESO ✦ TECNOLOGÍA ✦ RESULTADOS ✦</span>
+    </div>
+  </div>
+
+
+  <!-- SECCIÓN 6: FRUTOS — FRUTO 1: DOCUMENTACIÓN TO BE / PLAN DE CALIDAD -->
+  <section id="resultados" class="bg-fruits fruit-view">
+    <span class="fruit-float">🍎</span><span class="fruit-float">🍊</span><span class="fruit-float">🍋</span>
+    <span class="fruit-float">🍎</span><span class="fruit-float">🍊</span><span class="fruit-float">🍋</span>
+    <div class="eyebrow reveal" style="margin:0 auto 20px;"><span class="dot"></span>🍎 Fruto 1 · Calidad</div>
+    <h2 class="reveal center fruit1-heading">DOCUMENTACIÓN DE PROCESOS <span class="hl hl-green">TO BE</span><br>EN EL PLAN DE CALIDAD</h2>
+
+    <div class="fruit1-grid">
+      <div class="fruit1-card fruit1-card-text reveal">
+        <p>En conjunto con los líderes de proceso, estamos documentando los procesos <b>TO BE</b> de la etapa de
+          Diseño para integrarlos al Sistema de Gestión de Calidad.</p>
+        <p>Estamos próximos a comenzar la construcción del <b>Plan de Calidad de Ejecución</b>, fortaleciendo la
+          estandarización y sostenibilidad de la nueva forma de trabajar.</p>
+      </div>
+
+      <div class="fruit1-card fruit1-card-ring reveal">
+        <div class="progress-ring" data-percent="80">
+          <svg viewBox="0 0 200 200" aria-hidden="true">
+            <circle class="ring-bg" cx="100" cy="100" r="88"></circle>
+            <circle class="ring-fill" cx="100" cy="100" r="88"></circle>
+          </svg>
+          <div class="ring-label">
+            <span class="ring-num" data-target="80">0</span><span class="ring-pct">%</span>
+            <small>Plan de Calidad · Diseño</small>
+          </div>
+        </div>
+      </div>
+
+      <div class="fruit1-card fruit1-card-steps reveal">
+        <div class="fruit1-steps">
+          <div class="fruit1-step-img"><img src="ramas/tobe1.png" alt="Plan de Calidad de Diseño"></div>
+          <div class="fruit1-step-chips">
+            <span class="status-chip done">80% Diseño</span>
+            <span class="status-chip next">Próximo · Ejecución</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECCIÓN 6b: FRUTOS — FRUTO 2: ECOSISTEMA DE LICENCIAMIENTO -->
+  <section id="ecosistema" class="bg-fruits fruit-view">
+    <span class="fruit-float">🍎</span><span class="fruit-float">🍊</span><span class="fruit-float">🍋</span>
+    <span class="fruit-float">🍎</span><span class="fruit-float">🍊</span><span class="fruit-float">🍋</span>
+    <div class="eyebrow reveal" style="margin:0 auto 24px;"><span class="dot"></span>🍎 Fruto 2 · Licenciamiento</div>
+    <h2 class="reveal center">DE UN LICENCIAMIENTO CONCENTRADO<br>A UN ECOSISTEMA INTEGRAL</h2>
+
+    <div class="eco-highlight reveal">
+      <span class="eco-num" data-target="8.4" data-decimals="1">0</span><span class="eco-suffix">%</span>
+      <span class="eco-caption">adicional sobre la inversión total<br>para ampliar todo el alcance del proyecto</span>
+    </div>
+
+    <div class="eco-grid reveal">
+      <div class="eco-card">
+        <div class="eco-amount" data-target="80">0</div>
+        <div class="eco-label">Licencias<br>Factory Track</div>
+      </div>
+      <div class="eco-card">
+        <div class="eco-amount" data-target="18">0</div>
+        <div class="eco-label">Licencias<br>Requisiciones</div>
+      </div>
+      <div class="eco-card">
+        <div class="eco-amount" data-target="20">0</div>
+        <div class="eco-label">Licencias<br>Service Mobile</div>
+      </div>
+      <div class="eco-card">
+        <div class="eco-amount" data-target="10">0</div>
+        <div class="eco-label">Licencias<br>CPQ</div>
+      </div>
+    </div>
+
+    <div class="eco-note reveal">+ Plataforma base necesaria para su operación</div>
+  </section>
+
+  <!-- SECCIÓN 6: FELICIDAD — ANTES / AHORA -->
+  <section id="felicidad">
+    <div class="float-deco" aria-hidden="true">
+      <span class="float-item" style="left:8%;top:16%;font-size:1.4rem;animation-duration:10s;">🍃</span>
+      <span class="float-item"
+        style="left:90%;top:70%;font-size:1.2rem;animation-duration:12s;animation-delay:1s;">😊</span>
+    </div>
+    <div class="eyebrow reveal" style="margin:0 auto 14px;"><span class="dot"></span>🍎 Fruto · Felicidad</div>
+    <h2 class="reveal center felicidad-title">AUMENTAMOS NUESTRA FELICIDAD</h2>
+    <p class="section-sub reveal felicidad-sub" style="margin-left:auto;margin-right:auto;">Nivel de satisfacción del equipo, antes
+      y ahora</p>
+
+    <div class="impact-bars impact-bars-big">
+      <div class="impact-bar-col before">
+        <div class="impact-bar-track">
+          <div class="impact-bar-fill" data-percent="46"></div>
+        </div>
+        <div class="impact-bar-pct">0%</div>
+        <div class="impact-bar-caption">Antes</div>
+      </div>
+      <div class="impact-bar-col after">
+        <div class="impact-bar-track">
+          <div class="impact-bar-fill" data-percent="88"></div>
+        </div>
+        <div class="impact-bar-pct">0%</div>
+        <div class="impact-bar-caption">Ahora</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECCIÓN 8: LEAD TIME — ANTES / DESPUÉS -->
+  <section id="leadtime" class="fruit-view">
+    <canvas class="digital-canvas"></canvas>
+    <div class="leadtime-glow leadtime-glow-1" aria-hidden="true"></div>
+    <div class="leadtime-glow leadtime-glow-2" aria-hidden="true"></div>
+    <div class="leadtime-rings" aria-hidden="true">
+      <span></span><span></span><span></span>
+    </div>
+    <div class="float-deco" aria-hidden="true">
+      <span class="float-item" style="left:6%;top:20%;font-size:1.3rem;animation-duration:11s;">⏱️</span>
+      <span class="float-item"
+        style="left:88%;top:65%;font-size:1.2rem;animation-duration:9s;animation-delay:1.4s;">🌿</span>
+    </div>
+    <div class="eyebrow reveal" style="margin:0 auto 24px;"><span class="dot"></span>🍎 Fruto 3 · Eficiencia</div>
+
+    <div class="leadtime-hero reveal">
+      <div class="leadtime-down-arrow">↓</div>
+      <div class="leadtime-mega"><span class="leadtime-mega-num" data-target="50">0</span><span class="leadtime-mega-suffix">%</span></div>
+      <h2 class="center">LEAD TIME DE<br>PROYECTOS INTERNOS</h2>
+    </div>
+
+    <div class="leadtime-chips reveal">
+      <span class="leadtime-chip">Menos retrabajos</span>
+      <span class="leadtime-chip">Mayor eficiencia</span>
+      <span class="leadtime-chip">Entregas más ágiles</span>
+    </div>
+
+    <p class="leadtime-final reveal">Reducción del <b>50%</b> en el lead time de los proyectos.</p>
+  </section>
+
+  <!-- SECCIÓN 9a: CIERRE — ESLOGAN sobre foto a pantalla completa -->
+  <section id="cierre" class="eslogan-section">
+    <div class="eslogan-bg"><img src="ramas/grupal.jpg" alt="Equipo de Transformación Digital"></div>
+    <div class="eslogan-overlay"></div>
+    <div class="float-deco" aria-hidden="true">
+      <span class="float-item" style="left:10%;top:20%;font-size:1.4rem;animation-duration:11s;">🍂</span>
+      <span class="float-item"
+        style="left:88%;top:24%;font-size:1.2rem;animation-duration:9s;animation-delay:1s;">🍂</span>
+      <span class="float-item"
+        style="left:50%;top:75%;font-size:1.3rem;animation-duration:10s;animation-delay:2s;">🍃</span>
+    </div>
+    <p class="closing-eslogan">“LA EMPRESA VALE LO QUE SU GENTE VALGA”</p>
+  </section>
+
+  <!-- SECCIÓN 9b: CIERRE — VIDEO DE DESPEDIDA a pantalla completa -->
+  <section class="video-section bg-bark" id="cierreVideo">
+    <div class="video-wrap" id="cierreVideoWrap">
+      <video id="videoCierre" class="autoplay-video" muted playsinline preload="metadata" style="display: block;">
+        <source src="ramas/cierre.mp4" type="video/mp4">
+      </video>
+      <div class="video-overlay"></div>
+      <div class="video-big-play" aria-hidden="true">▶</div>
+      <div class="video-click-hint">▶ Toca para reproducir con audio</div>
+      <div class="video-caption reveal">
+        <h3>Gracias por ser parte de esta transformación</h3>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECCIÓN 9c: PIE DE PÁGINA -->
+  <section id="footerSection" class="bg-tree-silhouette footer-only">
+    <footer class="site-footer reveal">
+      <div class="footer-logo"><img src="imagesproyectos/logoBLANCO.png" alt="Logo Transformación Digital"></div>
+      <div class="footer-title">Transformación Digital</div>
+      <div class="footer-sub">Success Summit 2026</div>
+      <a href="#hero" class="btn btn-outline magnetic" style="margin-top:24px;">Volver al inicio ↑</a>
+    </footer>
+  </section>
+
+  <canvas id="confetti"></canvas>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="script.js"></script>
+</body>
+
+</html>
